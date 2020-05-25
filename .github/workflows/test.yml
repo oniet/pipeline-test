@@ -27,4 +27,4 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
     - name: Test with Maven Surefire Plugin
-      run: mvn -B plugins:maven-surefire-plugin:test --file pom.xml
+      run: mvn -B plugins:maven-surefire-plugin:2.22.2:test --file pom.xml
